@@ -1,0 +1,104 @@
+[
+  {
+    "id": "6353a90e8a330c4a0b8dc278",
+    "email": "@undefined.post",
+    "username": "undefined91",
+    "profile": {
+      "firstName": "Sophia}",
+      "lastName": "Buckner",
+      "dob": "1991-12-25",
+      "location": {
+        "lat": -3.626923,
+        "long": 8.585407
+      },
+      "about": "Incididunt aute officia anim dolore elit ut amet quis consequat officia in nulla est. Ipsum ea aliquip amet nulla est."
+    },
+    "createdAt": "2010-09-01T09:56:49.922Z",
+    "updatedAt": "2010-09-02T09:56:49.922Z"
+  },
+  {
+    "id": "6353a90edf5ca71eb5891702",
+    "email": "@undefined.ac",
+    "username": "undefined90",
+    "profile": {
+      "firstName": "Butler}",
+      "lastName": "Henson",
+      "dob": "1990-03-09",
+      "location": {
+        "lat": 39.537435,
+        "long": 167.704043
+      },
+      "about": "Lorem eiusmod sint do deserunt non sunt ea consectetur ex duis. Esse sit amet exercitation aliqua incididunt labore commodo anim ex irure est excepteur velit."
+    },
+    "createdAt": "2013-11-13T17:32:36.836Z",
+    "updatedAt": "2013-11-14T17:32:36.836Z"
+  },
+  {
+    "id": "6353a90e75ffebb3c418238e",
+    "email": "@undefined.ifm",
+    "username": "undefined91",
+    "profile": {
+      "firstName": "Stefanie}",
+      "lastName": "Potts",
+      "dob": "1991-12-07",
+      "location": {
+        "lat": 84.812869,
+        "long": 61.653889
+      },
+      "about": "Nostrud fugiat ad ex cupidatat consequat proident sunt. Cillum id anim et ex cillum aliquip enim ullamco magna excepteur laboris magna voluptate et."
+    },
+    "createdAt": "2013-05-12T19:34:18.483Z",
+    "updatedAt": "2013-05-13T19:34:18.483Z"
+  },
+  {
+    "id": "6353a90e922d15d2671808dc",
+    "email": "@undefined.casa",
+    "username": "undefined94",
+    "profile": {
+      "firstName": "Woodard}",
+      "lastName": "Best",
+      "dob": "1994-09-05",
+      "location": {
+        "lat": -60.937529,
+        "long": -175.594147
+      },
+      "about": "Laborum sint ullamco ullamco velit aliqua non ex cupidatat irure. Nisi commodo quis ipsum qui elit dolore."
+    },
+    "createdAt": "2012-08-21T02:00:58.901Z",
+    "updatedAt": "2012-08-22T02:00:58.901Z"
+  },
+  {
+    "id": "6353a90e611951ee6bb43e0f",
+    "email": "@undefined.pro",
+    "username": "undefined93",
+    "profile": {
+      "firstName": "Frank}",
+      "lastName": "Bass",
+      "dob": "1993-04-10",
+      "location": {
+        "lat": 8.173266,
+        "long": -49.010339
+      },
+      "about": "Dolor reprehenderit aute duis elit consequat ad fugiat cillum. Dolor occaecat in veniam in incididunt ad sunt labore in deserunt laborum do."
+    },
+    "createdAt": "2011-05-24T20:35:54.707Z",
+    "updatedAt": "2011-05-25T20:35:54.707Z"
+  },
+  {
+    "id": "6353a90e9249839cbb4d9c29",
+    "email": "@undefined.latrobe",
+    "username": "undefined91",
+    "profile": {
+      "firstName": "Tate}",
+      "lastName": "Houston",
+      "dob": "1991-01-31",
+      "location": {
+        "lat": 14.947137,
+        "long": 136.073885
+      },
+      "about": "Non culpa veniam nisi id labore id. Non quis reprehenderit non nulla sint sint."
+    },
+    "createdAt": "2010-05-13T13:58:58.217Z",
+    "updatedAt": "2010-05-14T13:58:58.217Z"
+  }
+]
