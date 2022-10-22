@@ -8,15 +8,20 @@
 import SwiftUI
 
 struct DiscoverView: View {
+    @EnvironmentObject var matches: MatchMaker
     private var people: [String] = ["Mario", "Lugi", "Peach", "Toad", "Daisy"].reversed()
     
     var body: some View {
-        VStack {
-            ZStack {
-                ForEach(people, id: \.self) { person in
-                   CardView(person: person)
+        if matches.showingFriend == false && matches.selectFriend == nil {
+            VStack {
+                ZStack {
+                    ForEach(friends) { friend in
+                        CardView(person: friend)
+                    }
                 }
             }
+        } else {
+            DiscoverDetailView()
         }
     }
 }

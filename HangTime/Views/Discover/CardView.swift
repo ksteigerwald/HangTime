@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CardView: View {
-    var person: String
+    var person: Friend
     @State private var offset = CGSize.zero
     @State private var color: Color = .blue
     
@@ -21,7 +21,7 @@ struct CardView: View {
                 .foregroundColor(color.opacity(0.9))
                 .shadow(radius: 4)
             HStack {
-                Text(person)
+                Text(person.firstName)
                     .font(.largeTitle)
                     .foregroundColor(.white)
                     .bold()
@@ -51,9 +51,9 @@ struct CardView: View {
         switch width {
         case -500...(-150):
             offset = CGSize(width: -500, height: 0)
-            print("\(person) removed")
+            print("\(person.firstName) removed")
         case 150...500:
-            print("\(person) added")
+            print("\(person.firstName) added")
             offset = CGSize(width: 500, height: 0)
         default:
             offset = .zero
@@ -74,6 +74,6 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(person: "Mario")
+        CardView(person: friends.first!)
     }
 }

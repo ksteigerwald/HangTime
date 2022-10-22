@@ -11,7 +11,7 @@ struct MainView: View {
     var body: some View {
         NavigationBarView()
         TabView {
-           HomeView()
+            HomeView()
                 .tabItem({
                     Image(systemName: "house")
                     Text("Home")

@@ -9,14 +9,14 @@ import SwiftUI
 
 struct NavigationBarDetailView: View {
     
-    @EnvironmentObject var friend: Friends
+    @EnvironmentObject var matches: MatchMaker
     
     var body: some View {
         HStack {
             Button {
                 withAnimation(.easeIn) {
-                    shop.selectedProduct = nil
-                    shop.showingProduct = false
+                    matches.selectFriend = nil
+                    matches.showingFriend = false
                 }
             } label: {
                 Image(systemName: "chevron.left")
@@ -33,10 +33,9 @@ struct NavigationBarDetailView: View {
                     .font(.title)
                     .foregroundColor(.white)
             }
-
-
+            
+            
         }
-    }
     }
 }
 

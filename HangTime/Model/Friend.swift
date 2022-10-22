@@ -25,7 +25,12 @@ struct Friend: Codable, Identifiable {
     let id: String
     let email: String
     let username: String
-    let profile: Profile
+    let firstName: String
+    let lastName: String
+    let dob: String
+    let about: String
+    var lat: Double
+    var long: Double
     let createdAt: String
     let updatedAt: String
 }

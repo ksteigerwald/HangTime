@@ -14,7 +14,7 @@ struct HangTimeApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
-                .environmentObject(Friends())
+                .environmentObject(MatchMaker())
                // .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
