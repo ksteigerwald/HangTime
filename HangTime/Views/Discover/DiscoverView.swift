@@ -18,7 +18,6 @@ struct DiscoverView: View {
                         CardView(person: friend)
                             .onTapGesture {
                                 withAnimation(.easeOut) {
-                                    print("foobar \(friend.firstName)")
                                     matches.tabSelection = 2
                                     matches.selectFriend = friend
                                     matches.showingFriend = true

@@ -9,10 +9,25 @@ import SwiftUI
 
 struct MainView: View {
     @EnvironmentObject var matches: MatchMaker
-    
+   
+    var handler: Binding<Int> {
+        Binding(
+            get: { matches.tabSelection },
+            set: {
+                switch $0 {
+                case 2:
+                    matches.tabSelection = 2
+                    matches.showingFriend = false
+                    matches.selectFriend = nil
+                default:
+                    print($0)
+                }
+            }
+        )
+    }
     var body: some View {
         NavigationBarView()
-        TabView(selection: $matches.tabSelection) {
+        TabView(selection: handler) {
             HomeView()
                 .tabItem({
                     Image(systemName: "house")
@@ -22,6 +37,8 @@ struct MainView: View {
             DiscoverView()
                 .tabItem({
                     Image(systemName: "magnifyingglass")
+                        .onTapGesture {
+                        }
                     Text("Discover")
                 })
                 .tag(2)
