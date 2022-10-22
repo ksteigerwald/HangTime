@@ -16,6 +16,8 @@
 		8025BF292903E43800F11127 /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8025BF282903E43800F11127 /* CodableBundleExtension.swift */; };
 		8025BF2B2903E47900F11127 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8025BF2A2903E47900F11127 /* Constant.swift */; };
 		8025BF2D2903FFA100F11127 /* CustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8025BF2C2903FFA100F11127 /* CustomShape.swift */; };
+		8025BF2F29047ADE00F11127 /* FriendPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8025BF2E29047ADE00F11127 /* FriendPhotoView.swift */; };
+		8025BF3129047C2D00F11127 /* FriendPhotoTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8025BF3029047C2D00F11127 /* FriendPhotoTabView.swift */; };
 		803F83002902EA65001097FE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F82FF2902EA65001097FE /* MainView.swift */; };
 		803F83032902EB10001097FE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F83022902EB10001097FE /* HomeView.swift */; };
 		803F83052902EBD8001097FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F83042902EBD8001097FE /* ContentView.swift */; };
@@ -60,6 +62,8 @@
 		8025BF282903E43800F11127 /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
 		8025BF2A2903E47900F11127 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		8025BF2C2903FFA100F11127 /* CustomShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShape.swift; sourceTree = "<group>"; };
+		8025BF2E29047ADE00F11127 /* FriendPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPhotoView.swift; sourceTree = "<group>"; };
+		8025BF3029047C2D00F11127 /* FriendPhotoTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPhotoTabView.swift; sourceTree = "<group>"; };
 		803F82FF2902EA65001097FE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		803F83022902EB10001097FE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		803F83042902EBD8001097FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				803F83062903BFD0001097FE /* CardView.swift */,
 				8025BF152903D23400F11127 /* DiscoverView.swift */,
 				8025BF172903D61F00F11127 /* DiscoverDetailView.swift */,
+				8025BF2E29047ADE00F11127 /* FriendPhotoView.swift */,
+				8025BF3029047C2D00F11127 /* FriendPhotoTabView.swift */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -407,8 +413,10 @@
 				80BB836F2902D9C700EE8E3A /* HangTimeApp.swift in Sources */,
 				8025BF202903DD3900F11127 /* NavigationBarDetailView.swift in Sources */,
 				8025BF1E2903DC9300F11127 /* Friend.swift in Sources */,
+				8025BF2F29047ADE00F11127 /* FriendPhotoView.swift in Sources */,
 				80BB83A52902DB2D00EE8E3A /* NavigationBarView.swift in Sources */,
 				8025BF292903E43800F11127 /* CodableBundleExtension.swift in Sources */,
+				8025BF3129047C2D00F11127 /* FriendPhotoTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

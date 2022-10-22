@@ -21,6 +21,11 @@ struct Profile: Codable {
     var location: Location
 }
 
+struct Photo: Codable, Identifiable {
+    let id: Int
+    let image: String
+}
+
 struct Friend: Codable, Identifiable {
     let id: String
     let email: String
@@ -33,4 +38,5 @@ struct Friend: Codable, Identifiable {
     var long: Double
     let createdAt: String
     let updatedAt: String
+    let photos: [Photo]
 }

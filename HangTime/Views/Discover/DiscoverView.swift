@@ -27,7 +27,7 @@ struct DiscoverView: View {
         } else {
             ZStack() {
                 Color.pink.ignoresSafeArea()
-                DiscoverDetailView()
+                DiscoverDetailView(friend: matches.selectFriend ?? friends[0])
                 Spacer()
             }
             .background(Color.pink.ignoresSafeArea(.all))

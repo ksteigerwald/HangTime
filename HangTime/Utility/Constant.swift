@@ -7,4 +7,4 @@
 
 import SwiftUI
 
-let friends: [Friend] = Bundle.main.decode([Friend].self, from: "friends.json")!
+let friends: [Friend] = Bundle.main.decode("friends.json")

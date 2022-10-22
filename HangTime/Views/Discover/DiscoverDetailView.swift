@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct DiscoverDetailView: View {
-    @EnvironmentObject var matches: MatchMaker
+    @State var friend: Friend
     
     var body: some View {
-        VStack {
-            Text("hello")
+        VStack(spacing: 5) {
+            FriendPhotoTabView(
+                friend: friend)
         }
         .background(Color.pink.ignoresSafeArea(.all))
     }
@@ -20,7 +21,7 @@ struct DiscoverDetailView: View {
 
 struct DiscoverDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DiscoverDetailView()
+        DiscoverDetailView(friend: friends[0])
             .environmentObject(MatchMaker())
             .previewLayout(.fixed(width: 375, height: 812))
     }
