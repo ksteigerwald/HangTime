@@ -9,7 +9,6 @@ import SwiftUI
 
 struct DiscoverView: View {
     @EnvironmentObject var matches: MatchMaker
-    private var people: [String] = ["Mario", "Lugi", "Peach", "Toad", "Daisy"].reversed()
     
     var body: some View {
         if matches.showingFriend == false && matches.selectFriend == nil {
@@ -17,6 +16,14 @@ struct DiscoverView: View {
                 ZStack {
                     ForEach(friends) { friend in
                         CardView(person: friend)
+                            .onTapGesture {
+                                withAnimation(.easeOut) {
+                                    print("foobar \(friend.firstName)")
+                                    matches.tabSelection = 2
+                                    matches.selectFriend = friend
+                                    matches.showingFriend = true
+                                }
+                            }
                     }
                 }
             }
@@ -29,5 +36,6 @@ struct DiscoverView: View {
 struct DiscoverView_Previews: PreviewProvider {
     static var previews: some View {
         DiscoverView()
+            .environmentObject(MatchMaker())
     }
 }

@@ -10,4 +10,5 @@ import Foundation
 class MatchMaker: ObservableObject {
     @Published var showingFriend: Bool = false
     @Published var selectFriend: Friend? = nil
+    @Published var tabSelection: Int = 1
 }

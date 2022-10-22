@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct DiscoverDetailView: View {
+    @EnvironmentObject var matches: MatchMaker
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
@@ -16,5 +18,6 @@ struct DiscoverDetailView: View {
 struct DiscoverDetailView_Previews: PreviewProvider {
     static var previews: some View {
         DiscoverDetailView()
+            .environmentObject(MatchMaker())
     }
 }

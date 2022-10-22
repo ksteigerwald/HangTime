@@ -8,19 +8,23 @@
 import SwiftUI
 
 struct MainView: View {
+    @EnvironmentObject var matches: MatchMaker
+    
     var body: some View {
         NavigationBarView()
-        TabView {
+        TabView(selection: $matches.tabSelection) {
             HomeView()
                 .tabItem({
                     Image(systemName: "house")
                     Text("Home")
                 })
+                .tag(1)
             DiscoverView()
                 .tabItem({
                     Image(systemName: "magnifyingglass")
                     Text("Discover")
                 })
+                .tag(2)
         }
     }
 }
