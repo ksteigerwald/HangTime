@@ -8,16 +8,25 @@
 import SwiftUI
 
 struct NavigationBarView: View {
+    @EnvironmentObject var matches: MatchMaker
+    
     var body: some View {
-        HStack {
-            Spacer()
-                .frame(maxWidth: .infinity, alignment: .leading)
-            logo
-                .frame(maxWidth: .infinity, alignment: .center)
-            profilePic
-                .frame(maxWidth: .infinity, alignment: .trailing)
+        if matches.showingFriend == false && matches.selectFriend == nil {
+            HStack {
+                Spacer()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                logo
+                    .frame(maxWidth: .infinity, alignment: .center)
+                profilePic
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+            }
+            .padding(.horizontal, 10)
+        } else {
+            NavigationBarDetailView()
+                .background(.red)
+                .padding(.horizontal)
+                .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
         }
-        .padding(.horizontal, 10)
     }
 
     @ViewBuilder
@@ -40,5 +49,6 @@ struct NavigationBarView: View {
 struct NavigationBarView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationBarView()
+            .environmentObject(MatchMaker())
     }
 }

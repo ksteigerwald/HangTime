@@ -33,8 +33,6 @@ struct NavigationBarDetailView: View {
                     .font(.title)
                     .foregroundColor(.white)
             }
-            
-            
         }
     }
 }
@@ -42,5 +40,9 @@ struct NavigationBarDetailView: View {
 struct NavigationBarDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationBarDetailView()
+            .environmentObject(MatchMaker())
+            .previewLayout(.sizeThatFits)
+            .padding()
+            .background(Color.red)
     }
 }

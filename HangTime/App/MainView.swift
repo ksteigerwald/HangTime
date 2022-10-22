@@ -17,14 +17,15 @@ struct MainView: View {
                 switch $0 {
                 case 2:
                     matches.tabSelection = 2
-                    matches.showingFriend = false
-                    matches.selectFriend = nil
                 default:
                     print($0)
                 }
+                    matches.showingFriend = false
+                    matches.selectFriend = nil
             }
         )
     }
+    
     var body: some View {
         NavigationBarView()
         TabView(selection: handler) {
@@ -49,5 +50,6 @@ struct MainView: View {
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
+            .environmentObject(MatchMaker())
     }
 }
