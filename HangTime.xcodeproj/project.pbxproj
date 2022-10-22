@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		803F83002902EA65001097FE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F82FF2902EA65001097FE /* MainView.swift */; };
+		803F83032902EB10001097FE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F83022902EB10001097FE /* HomeView.swift */; };
+		803F83052902EBD8001097FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F83042902EBD8001097FE /* ContentView.swift */; };
 		80BB836F2902D9C700EE8E3A /* HangTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BB836E2902D9C700EE8E3A /* HangTimeApp.swift */; };
-		80BB83712902D9C700EE8E3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BB83702902D9C700EE8E3A /* ContentView.swift */; };
+		80BB83712902D9C700EE8E3A /* ContentViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BB83702902D9C700EE8E3A /* ContentViewDefault.swift */; };
 		80BB83732902D9C900EE8E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80BB83722902D9C900EE8E3A /* Assets.xcassets */; };
 		80BB83762902D9C900EE8E3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80BB83752902D9C900EE8E3A /* Preview Assets.xcassets */; };
 		80BB83782902D9C900EE8E3A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BB83772902D9C900EE8E3A /* Persistence.swift */; };
@@ -16,6 +19,8 @@
 		80BB83852902D9C900EE8E3A /* HangTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BB83842902D9C900EE8E3A /* HangTimeTests.swift */; };
 		80BB838F2902D9C900EE8E3A /* HangTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BB838E2902D9C900EE8E3A /* HangTimeUITests.swift */; };
 		80BB83912902D9C900EE8E3A /* HangTimeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BB83902902D9C900EE8E3A /* HangTimeUITestsLaunchTests.swift */; };
+		80BB83A02902DA2A00EE8E3A /* KaushanScript-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80BB839F2902DA2A00EE8E3A /* KaushanScript-Regular.ttf */; };
+		80BB83A52902DB2D00EE8E3A /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BB83A42902DB2D00EE8E3A /* NavigationBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		803F82FF2902EA65001097FE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		803F83022902EB10001097FE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		803F83042902EBD8001097FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		80BB836B2902D9C700EE8E3A /* HangTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HangTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80BB836E2902D9C700EE8E3A /* HangTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HangTimeApp.swift; sourceTree = "<group>"; };
-		80BB83702902D9C700EE8E3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		80BB83702902D9C700EE8E3A /* ContentViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewDefault.swift; sourceTree = "<group>"; };
 		80BB83722902D9C900EE8E3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80BB83752902D9C900EE8E3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		80BB83772902D9C900EE8E3A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +56,9 @@
 		80BB838A2902D9C900EE8E3A /* HangTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HangTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80BB838E2902D9C900EE8E3A /* HangTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HangTimeUITests.swift; sourceTree = "<group>"; };
 		80BB83902902D9C900EE8E3A /* HangTimeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HangTimeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		80BB839F2902DA2A00EE8E3A /* KaushanScript-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KaushanScript-Regular.ttf"; sourceTree = "<group>"; };
+		80BB83A12902DA9900EE8E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		80BB83A42902DB2D00EE8E3A /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +86,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		803F82FE2902EA57001097FE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				803F82FF2902EA65001097FE /* MainView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		803F83012902EAF9001097FE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				803F83022902EB10001097FE /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		80BB83622902D9C700EE8E3A = {
 			isa = PBXGroup;
 			children = (
@@ -98,12 +125,17 @@
 		80BB836D2902D9C700EE8E3A /* HangTime */ = {
 			isa = PBXGroup;
 			children = (
+				803F82FE2902EA57001097FE /* App */,
+				80BB83A22902DAE800EE8E3A /* Views */,
+				80BB83A12902DA9900EE8E3A /* Info.plist */,
+				80BB839E2902D9E500EE8E3A /* Fonts */,
 				80BB836E2902D9C700EE8E3A /* HangTimeApp.swift */,
-				80BB83702902D9C700EE8E3A /* ContentView.swift */,
+				80BB83702902D9C700EE8E3A /* ContentViewDefault.swift */,
 				80BB83722902D9C900EE8E3A /* Assets.xcassets */,
 				80BB83772902D9C900EE8E3A /* Persistence.swift */,
 				80BB83792902D9C900EE8E3A /* HangTime.xcdatamodeld */,
 				80BB83742902D9C900EE8E3A /* Preview Content */,
+				803F83042902EBD8001097FE /* ContentView.swift */,
 			);
 			path = HangTime;
 			sourceTree = "<group>";
@@ -131,6 +163,31 @@
 				80BB83902902D9C900EE8E3A /* HangTimeUITestsLaunchTests.swift */,
 			);
 			path = HangTimeUITests;
+			sourceTree = "<group>";
+		};
+		80BB839E2902D9E500EE8E3A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				80BB839F2902DA2A00EE8E3A /* KaushanScript-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		80BB83A22902DAE800EE8E3A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				803F83012902EAF9001097FE /* Home */,
+				80BB83A32902DAF100EE8E3A /* Nav */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		80BB83A32902DAF100EE8E3A /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				80BB83A42902DB2D00EE8E3A /* NavigationBarView.swift */,
+			);
+			path = Nav;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +296,7 @@
 			files = (
 				80BB83762902D9C900EE8E3A /* Preview Assets.xcassets in Resources */,
 				80BB83732902D9C900EE8E3A /* Assets.xcassets in Resources */,
+				80BB83A02902DA2A00EE8E3A /* KaushanScript-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,9 +322,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				80BB83782902D9C900EE8E3A /* Persistence.swift in Sources */,
-				80BB83712902D9C700EE8E3A /* ContentView.swift in Sources */,
+				803F83032902EB10001097FE /* HomeView.swift in Sources */,
+				803F83052902EBD8001097FE /* ContentView.swift in Sources */,
+				803F83002902EA65001097FE /* MainView.swift in Sources */,
+				80BB83712902D9C700EE8E3A /* ContentViewDefault.swift in Sources */,
 				80BB837B2902D9C900EE8E3A /* HangTime.xcdatamodeld in Sources */,
 				80BB836F2902D9C700EE8E3A /* HangTimeApp.swift in Sources */,
+				80BB83A52902DB2D00EE8E3A /* NavigationBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +490,7 @@
 				DEVELOPMENT_TEAM = U4U5EF5UUY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HangTime/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -457,6 +520,7 @@
 				DEVELOPMENT_TEAM = U4U5EF5UUY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HangTime/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
