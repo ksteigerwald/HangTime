@@ -17,11 +17,9 @@ struct DiscoverView: View {
                     ForEach(friends) { friend in
                         CardView(person: friend)
                             .onTapGesture {
-                                withAnimation(.easeOut) {
-                                    matches.tabSelection = 2
-                                    matches.selectFriend = friend
-                                    matches.showingFriend = true
-                                }
+                                matches.tabSelection = 2
+                                matches.selectFriend = friend
+                                matches.showingFriend = true
                             }
                     }
                 }

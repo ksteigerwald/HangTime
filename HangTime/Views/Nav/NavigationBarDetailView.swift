@@ -12,28 +12,31 @@ struct NavigationBarDetailView: View {
     @EnvironmentObject var matches: MatchMaker
     
     var body: some View {
-        HStack {
-            Button {
-                withAnimation(.easeIn) {
-                    matches.selectFriend = nil
-                    matches.showingFriend = false
+        ZStack {
+            HStack {
+                Button {
+                    withAnimation(.easeIn) {
+                        matches.selectFriend = nil
+                        matches.showingFriend = false
+                    }
+                } label: {
+                    Image(systemName: "chevron.left")
+                        .font(.title)
+                        .foregroundColor(.black)
                 }
-            } label: {
-                Image(systemName: "chevron.left")
-                    .font(.title)
-                    .foregroundColor(.white)
-            }
-            
-            Spacer()
-            
-            Button {
                 
-            } label: {
-                Image(systemName: "cart")
-                    .font(.title)
-                    .foregroundColor(.white)
+                Spacer()
+                
+                Button {
+                    
+                } label: {
+                    Image(systemName: "cart")
+                        .font(.title)
+                        .foregroundColor(.black)
+                }
             }
         }
+        .background(Color.pink.ignoresSafeArea())
     }
 }
 
@@ -42,7 +45,5 @@ struct NavigationBarDetailView_Previews: PreviewProvider {
         NavigationBarDetailView()
             .environmentObject(MatchMaker())
             .previewLayout(.sizeThatFits)
-            .padding()
-            .background(Color.red)
     }
 }

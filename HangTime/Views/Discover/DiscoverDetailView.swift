@@ -11,9 +11,13 @@ struct DiscoverDetailView: View {
     @EnvironmentObject var matches: MatchMaker
     
     var body: some View {
-        VStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color.pink.ignoresSafeArea(.all)
+            VStack(alignment: .leading, spacing: 5) {
+                Text("Hello world.")
+            }
         }
+        .background(Color.pink.ignoresSafeArea(.all))
     }
 }
 
@@ -21,5 +25,6 @@ struct DiscoverDetailView_Previews: PreviewProvider {
     static var previews: some View {
         DiscoverDetailView()
             .environmentObject(MatchMaker())
+            .previewLayout(.fixed(width: 375, height: 812))
     }
 }

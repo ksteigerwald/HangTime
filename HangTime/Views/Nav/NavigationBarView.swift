@@ -23,9 +23,6 @@ struct NavigationBarView: View {
             .padding(.horizontal, 10)
         } else {
             NavigationBarDetailView()
-                .background(.red)
-                .padding(.horizontal)
-                .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
         }
     }
 
