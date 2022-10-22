@@ -10,7 +10,6 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         VStack {
-            NavigationBarView()
             Spacer()
             Text("This is a home page")
         }

@@ -9,12 +9,13 @@ import SwiftUI
 
 @main
 struct HangTimeApp: App {
-    let persistenceController = PersistenceController.shared
+    // let persistenceController = PersistenceController.shared
 
     var body: some Scene {
         WindowGroup {
             MainView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(Friends())
+               // .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

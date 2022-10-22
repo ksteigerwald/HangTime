@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8025BF162903D23400F11127 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8025BF152903D23400F11127 /* DiscoverView.swift */; };
+		8025BF182903D61F00F11127 /* DiscoverDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8025BF172903D61F00F11127 /* DiscoverDetailView.swift */; };
+		8025BF1B2903DC3D00F11127 /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8025BF1A2903DC3D00F11127 /* Friends.swift */; };
+		8025BF1E2903DC9300F11127 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8025BF1D2903DC9300F11127 /* Friend.swift */; };
+		8025BF202903DD3900F11127 /* NavigationBarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8025BF1F2903DD3900F11127 /* NavigationBarDetailView.swift */; };
 		803F83002902EA65001097FE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F82FF2902EA65001097FE /* MainView.swift */; };
 		803F83032902EB10001097FE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F83022902EB10001097FE /* HomeView.swift */; };
 		803F83052902EBD8001097FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F83042902EBD8001097FE /* ContentView.swift */; };
@@ -44,6 +48,10 @@
 
 /* Begin PBXFileReference section */
 		8025BF152903D23400F11127 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		8025BF172903D61F00F11127 /* DiscoverDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverDetailView.swift; sourceTree = "<group>"; };
+		8025BF1A2903DC3D00F11127 /* Friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
+		8025BF1D2903DC9300F11127 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		8025BF1F2903DD3900F11127 /* NavigationBarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarDetailView.swift; sourceTree = "<group>"; };
 		803F82FF2902EA65001097FE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		803F83022902EB10001097FE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		803F83042902EBD8001097FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,13 +103,31 @@
 			children = (
 				803F83062903BFD0001097FE /* CardView.swift */,
 				8025BF152903D23400F11127 /* DiscoverView.swift */,
+				8025BF172903D61F00F11127 /* DiscoverDetailView.swift */,
 			);
 			path = Discover;
+			sourceTree = "<group>";
+		};
+		8025BF192903DAE200F11127 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8025BF1A2903DC3D00F11127 /* Friends.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		8025BF1C2903DC8200F11127 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8025BF1D2903DC9300F11127 /* Friend.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		803F82FE2902EA57001097FE /* App */ = {
 			isa = PBXGroup;
 			children = (
+				80BB836E2902D9C700EE8E3A /* HangTimeApp.swift */,
 				803F82FF2902EA65001097FE /* MainView.swift */,
 			);
 			path = App;
@@ -138,11 +164,12 @@
 		80BB836D2902D9C700EE8E3A /* HangTime */ = {
 			isa = PBXGroup;
 			children = (
+				8025BF1C2903DC8200F11127 /* Model */,
+				8025BF192903DAE200F11127 /* Utility */,
 				803F82FE2902EA57001097FE /* App */,
 				80BB83A22902DAE800EE8E3A /* Views */,
 				80BB83A12902DA9900EE8E3A /* Info.plist */,
 				80BB839E2902D9E500EE8E3A /* Fonts */,
-				80BB836E2902D9C700EE8E3A /* HangTimeApp.swift */,
 				80BB83702902D9C700EE8E3A /* ContentViewDefault.swift */,
 				80BB83722902D9C900EE8E3A /* Assets.xcassets */,
 				80BB83772902D9C900EE8E3A /* Persistence.swift */,
@@ -200,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				80BB83A42902DB2D00EE8E3A /* NavigationBarView.swift */,
+				8025BF1F2903DD3900F11127 /* NavigationBarDetailView.swift */,
 			);
 			path = Nav;
 			sourceTree = "<group>";
@@ -335,15 +363,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8025BF182903D61F00F11127 /* DiscoverDetailView.swift in Sources */,
 				80BB83782902D9C900EE8E3A /* Persistence.swift in Sources */,
 				803F83072903BFD1001097FE /* CardView.swift in Sources */,
 				803F83032902EB10001097FE /* HomeView.swift in Sources */,
 				803F83052902EBD8001097FE /* ContentView.swift in Sources */,
 				803F83002902EA65001097FE /* MainView.swift in Sources */,
 				80BB83712902D9C700EE8E3A /* ContentViewDefault.swift in Sources */,
+				8025BF1B2903DC3D00F11127 /* Friends.swift in Sources */,
 				80BB837B2902D9C900EE8E3A /* HangTime.xcdatamodeld in Sources */,
 				8025BF162903D23400F11127 /* DiscoverView.swift in Sources */,
 				80BB836F2902D9C700EE8E3A /* HangTimeApp.swift in Sources */,
+				8025BF202903DD3900F11127 /* NavigationBarDetailView.swift in Sources */,
+				8025BF1E2903DC9300F11127 /* Friend.swift in Sources */,
 				80BB83A52902DB2D00EE8E3A /* NavigationBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
