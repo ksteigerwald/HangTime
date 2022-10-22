@@ -25,7 +25,12 @@ struct DiscoverView: View {
                 }
             }
         } else {
-            DiscoverDetailView()
+            ZStack() {
+                Color.pink.ignoresSafeArea()
+                DiscoverDetailView()
+                Spacer()
+            }
+            .background(Color.pink.ignoresSafeArea(.all))
         }
     }
 }

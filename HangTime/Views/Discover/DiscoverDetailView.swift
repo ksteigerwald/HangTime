@@ -11,11 +11,8 @@ struct DiscoverDetailView: View {
     @EnvironmentObject var matches: MatchMaker
     
     var body: some View {
-        ZStack {
-            Color.pink.ignoresSafeArea(.all)
-            VStack(alignment: .leading, spacing: 5) {
-                Text("Hello world.")
-            }
+        VStack {
+            Text("hello")
         }
         .background(Color.pink.ignoresSafeArea(.all))
     }

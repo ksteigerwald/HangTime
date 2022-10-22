@@ -47,7 +47,9 @@ struct MainView: View {
                     })
                     .tag(2)
             }
+            .background(Color.pink.ignoresSafeArea())
         }
+        .background(Color.pink.ignoresSafeArea(edges: .top))
     }
 }
 
