@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8025BF162903D23400F11127 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8025BF152903D23400F11127 /* DiscoverView.swift */; };
 		803F83002902EA65001097FE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F82FF2902EA65001097FE /* MainView.swift */; };
 		803F83032902EB10001097FE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F83022902EB10001097FE /* HomeView.swift */; };
 		803F83052902EBD8001097FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F83042902EBD8001097FE /* ContentView.swift */; };
+		803F83072903BFD1001097FE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F83062903BFD0001097FE /* CardView.swift */; };
 		80BB836F2902D9C700EE8E3A /* HangTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BB836E2902D9C700EE8E3A /* HangTimeApp.swift */; };
 		80BB83712902D9C700EE8E3A /* ContentViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BB83702902D9C700EE8E3A /* ContentViewDefault.swift */; };
 		80BB83732902D9C900EE8E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80BB83722902D9C900EE8E3A /* Assets.xcassets */; };
@@ -41,9 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8025BF152903D23400F11127 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		803F82FF2902EA65001097FE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		803F83022902EB10001097FE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		803F83042902EBD8001097FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		803F83062903BFD0001097FE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		80BB836B2902D9C700EE8E3A /* HangTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HangTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80BB836E2902D9C700EE8E3A /* HangTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HangTimeApp.swift; sourceTree = "<group>"; };
 		80BB83702902D9C700EE8E3A /* ContentViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewDefault.swift; sourceTree = "<group>"; };
@@ -86,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8025BF142903D21700F11127 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				803F83062903BFD0001097FE /* CardView.swift */,
+				8025BF152903D23400F11127 /* DiscoverView.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
 		803F82FE2902EA57001097FE /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +189,7 @@
 		80BB83A22902DAE800EE8E3A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8025BF142903D21700F11127 /* Discover */,
 				803F83012902EAF9001097FE /* Home */,
 				80BB83A32902DAF100EE8E3A /* Nav */,
 			);
@@ -322,11 +336,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				80BB83782902D9C900EE8E3A /* Persistence.swift in Sources */,
+				803F83072903BFD1001097FE /* CardView.swift in Sources */,
 				803F83032902EB10001097FE /* HomeView.swift in Sources */,
 				803F83052902EBD8001097FE /* ContentView.swift in Sources */,
 				803F83002902EA65001097FE /* MainView.swift in Sources */,
 				80BB83712902D9C700EE8E3A /* ContentViewDefault.swift in Sources */,
 				80BB837B2902D9C900EE8E3A /* HangTime.xcdatamodeld in Sources */,
+				8025BF162903D23400F11127 /* DiscoverView.swift in Sources */,
 				80BB836F2902D9C700EE8E3A /* HangTimeApp.swift in Sources */,
 				80BB83A52902DB2D00EE8E3A /* NavigationBarView.swift in Sources */,
 			);

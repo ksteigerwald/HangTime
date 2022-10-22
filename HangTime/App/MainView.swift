@@ -15,6 +15,11 @@ struct MainView: View {
                     Image(systemName: "house")
                     Text("Home")
                 })
+            DiscoverView()
+                .tabItem({
+                    Image(systemName: "magnifyingglass")
+                    Text("Discover")
+                })
         }
     }
 }
