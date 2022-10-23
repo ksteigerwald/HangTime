@@ -12,13 +12,16 @@ struct ActivityItemView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
+            Spacer()
             Text(item.activity)
+                .frame(maxWidth: .infinity, alignment: .leading)
                 .font(.title3)
+                .padding(.bottom, 5)
+                .padding(.leading, 15)
         }
-        .frame(width: 175, height: 125)
+        .frame(width: .infinity, height: 125)
         .background(.pink)
         .cornerRadius(15)
-        .padding(5)
     }
 }
 
@@ -27,7 +30,7 @@ struct ActivityItemView_Previews: PreviewProvider {
         ActivityItemView(
             item: Activity(
                 id: 12,
-                activity: "Snowboarding",
+                activity: "Yoga",
                 categories: [
                     Category(name: "Sports")
                 ],

@@ -11,19 +11,27 @@ struct HomeView: View {
     @EnvironmentObject var matches: MatchMaker
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Text("This is a home page")
                 .font(.title)
             
-            ScrollView {
-                LazyVGrid(columns: gridLayout, spacing: 15) {
-                    ForEach(activities) { activity in
-                        ActivityItemView(item: activity)
-                    } //: LOOP
-                } //: GRID
-                .padding(15)
+            VStack(alignment: .leading) {
+                Text("Clicks")
+                    .padding(.top, 20)
+                    .font(.title2)
+                Text("Things happening near you")
+                    .font(.title3)
+                    .padding(.bottom, 10)
+                ScrollView {
+                    LazyVGrid(columns: gridLayout, spacing: 10) {
+                        ForEach(activities) { activity in
+                            ActivityItemView(item: activity)
+                        } //: LOOP
+                    } //: GRID
+                }
             }
         }
+        .padding(.horizontal, 15)
     }
 }
 
