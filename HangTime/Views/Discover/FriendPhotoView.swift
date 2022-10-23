@@ -14,8 +14,7 @@ struct FriendPhotoView: View {
     var body: some View {
         Image(photo.image)
             .resizable()
-            .scaledToFit()
-            .cornerRadius(12)
+            .aspectRatio(contentMode: .fit)
     }
 }
 

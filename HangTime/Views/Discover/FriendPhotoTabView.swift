@@ -14,10 +14,12 @@ struct FriendPhotoTabView: View {
             ForEach(friend.photos) { photo in
                 FriendPhotoView(photo: photo)
                     .padding(.top, 10)
-                    .padding(.horizontal, 15)
+                    .padding(.horizontal, 0)
             }
         }
-        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+        .tabViewStyle(
+            PageTabViewStyle(
+                indexDisplayMode: .always))
     }
 }
 

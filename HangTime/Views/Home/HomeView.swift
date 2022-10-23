@@ -8,9 +8,21 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject var matches: MatchMaker
+    
     var body: some View {
         VStack {
             Text("This is a home page")
+                .font(.title)
+            
+            ScrollView {
+                LazyVGrid(columns: gridLayout, spacing: 15) {
+                    ForEach(activities) { activity in
+                        ActivityItemView(item: activity)
+                    } //: LOOP
+                } //: GRID
+                .padding(15)
+            }
         }
     }
 }

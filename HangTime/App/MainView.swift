@@ -9,6 +9,9 @@ import SwiftUI
 
 struct MainView: View {
     @EnvironmentObject var matches: MatchMaker
+   
+    init() {
+    }
     
     var handler: Binding<Int> {
         Binding(
@@ -32,22 +35,37 @@ struct MainView: View {
         VStack {
             NavigationBarView()
             TabView(selection: handler) {
-                HomeView()
-                    .tabItem({
-                        Image(systemName: "house")
-                        Text("Home")
-                    })
-                    .tag(1)
-                DiscoverView()
-                    .tabItem({
-                        Image(systemName: "magnifyingglass")
-                            .onTapGesture {
-                            }
-                        Text("Discover")
-                    })
-                    .tag(2)
+                Group {
+                    HomeView()
+                        .tabItem({
+                            Label("Home", systemImage: "house")
+                                .background(.black)
+                        })
+                        .toolbar(.visible, for: .tabBar)
+                        .toolbarBackground(Color.pink, for: .tabBar)
+                        .tag(1)
+                    DiscoverView()
+                        .tabItem({
+                            Label("Discover", systemImage: "magnifyingglass")
+                                .foregroundColor(.black)
+                        })
+                        .toolbar(.visible, for: .tabBar)
+                        .toolbarBackground(Color.pink, for: .tabBar)
+                        .tag(2)
+                }
             }
-            .background(Color.pink.ignoresSafeArea())
+            .onAppear {
+                let appearance = UITabBarAppearance()
+                appearance.backgroundEffect = UIBlurEffect(style: .systemUltraThinMaterial)
+                appearance.backgroundColor = UIColor(Color.black.opacity(0.7))
+                // Use this when scrolling
+                UITabBar.appearance().standardAppearance = appearance
+                
+                // Use this when scrolled all the way up
+                UITabBar.appearance().scrollEdgeAppearance = appearance
+                UITabBar.appearance().unselectedItemTintColor = UIColor.white
+            }
+            .accentColor(.black)
         }
         .background(Color.pink.ignoresSafeArea(edges: .top))
     }

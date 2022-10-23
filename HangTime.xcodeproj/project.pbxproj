@@ -18,6 +18,9 @@
 		8025BF2D2903FFA100F11127 /* CustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8025BF2C2903FFA100F11127 /* CustomShape.swift */; };
 		8025BF2F29047ADE00F11127 /* FriendPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8025BF2E29047ADE00F11127 /* FriendPhotoView.swift */; };
 		8025BF3129047C2D00F11127 /* FriendPhotoTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8025BF3029047C2D00F11127 /* FriendPhotoTabView.swift */; };
+		8025BF332904D65E00F11127 /* activities.json in Resources */ = {isa = PBXBuildFile; fileRef = 8025BF322904D65E00F11127 /* activities.json */; };
+		8025BF352904D9CA00F11127 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8025BF342904D9CA00F11127 /* Activity.swift */; };
+		8025BF3C2904E8A800F11127 /* ActivityItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8025BF3B2904E8A800F11127 /* ActivityItemView.swift */; };
 		803F83002902EA65001097FE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F82FF2902EA65001097FE /* MainView.swift */; };
 		803F83032902EB10001097FE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F83022902EB10001097FE /* HomeView.swift */; };
 		803F83052902EBD8001097FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F83042902EBD8001097FE /* ContentView.swift */; };
@@ -64,6 +67,9 @@
 		8025BF2C2903FFA100F11127 /* CustomShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShape.swift; sourceTree = "<group>"; };
 		8025BF2E29047ADE00F11127 /* FriendPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPhotoView.swift; sourceTree = "<group>"; };
 		8025BF3029047C2D00F11127 /* FriendPhotoTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPhotoTabView.swift; sourceTree = "<group>"; };
+		8025BF322904D65E00F11127 /* activities.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = activities.json; sourceTree = "<group>"; };
+		8025BF342904D9CA00F11127 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		8025BF3B2904E8A800F11127 /* ActivityItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityItemView.swift; sourceTree = "<group>"; };
 		803F82FF2902EA65001097FE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		803F83022902EB10001097FE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		803F83042902EBD8001097FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -135,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				8025BF1D2903DC9300F11127 /* Friend.swift */,
+				8025BF342904D9CA00F11127 /* Activity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -143,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				8025BF252903DF1600F11127 /* friends.json */,
+				8025BF322904D65E00F11127 /* activities.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -153,6 +161,14 @@
 				8025BF282903E43800F11127 /* CodableBundleExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		8025BF382904E87400F11127 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				8025BF3B2904E8A800F11127 /* ActivityItemView.swift */,
+			);
+			path = Activity;
 			sourceTree = "<group>";
 		};
 		803F82FE2902EA57001097FE /* App */ = {
@@ -249,6 +265,7 @@
 		80BB83A22902DAE800EE8E3A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8025BF382904E87400F11127 /* Activity */,
 				8025BF142903D21700F11127 /* Discover */,
 				803F83012902EAF9001097FE /* Home */,
 				80BB83A32902DAF100EE8E3A /* Nav */,
@@ -371,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80BB83762902D9C900EE8E3A /* Preview Assets.xcassets in Resources */,
+				8025BF332904D65E00F11127 /* activities.json in Resources */,
 				80BB83732902D9C900EE8E3A /* Assets.xcassets in Resources */,
 				80BB83A02902DA2A00EE8E3A /* KaushanScript-Regular.ttf in Resources */,
 				8025BF262903DF1600F11127 /* friends.json in Resources */,
@@ -403,11 +421,13 @@
 				8025BF2D2903FFA100F11127 /* CustomShape.swift in Sources */,
 				803F83072903BFD1001097FE /* CardView.swift in Sources */,
 				8025BF2B2903E47900F11127 /* Constant.swift in Sources */,
+				8025BF3C2904E8A800F11127 /* ActivityItemView.swift in Sources */,
 				803F83032902EB10001097FE /* HomeView.swift in Sources */,
 				803F83052902EBD8001097FE /* ContentView.swift in Sources */,
 				803F83002902EA65001097FE /* MainView.swift in Sources */,
 				80BB83712902D9C700EE8E3A /* ContentViewDefault.swift in Sources */,
 				8025BF1B2903DC3D00F11127 /* MatchMaker.swift in Sources */,
+				8025BF352904D9CA00F11127 /* Activity.swift in Sources */,
 				80BB837B2902D9C900EE8E3A /* HangTime.xcdatamodeld in Sources */,
 				8025BF162903D23400F11127 /* DiscoverView.swift in Sources */,
 				80BB836F2902D9C700EE8E3A /* HangTimeApp.swift in Sources */,

@@ -7,6 +7,7 @@
 
 import Foundation
 
+/*
 extension Bundle {
     func decode<T: Codable>(_ file: String) -> T {
         
@@ -27,7 +28,7 @@ extension Bundle {
         return decodedData
     }
 }
-/*
+*/
 extension Bundle {
     
     func decode<x: Decodable>(_ type: x.Type, from filename: String) -> x? {
@@ -45,4 +46,4 @@ extension Bundle {
             return nil
         }
     }
-} */
+}

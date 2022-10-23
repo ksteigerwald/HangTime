@@ -1,0 +1,124 @@
+[
+    {
+        "id": 1,
+        "activity" : "Hiking",
+        "categories": [
+            {"name" : "Fitness"}
+        ],
+        "image" : "",
+        "locale" : {
+            "zip" : "80027",
+            "county": "Boulder",
+            "state": "CO"
+        },
+        "members" : []
+    },
+    {
+        "id": 2,
+        "activity" : "Skiing",
+        "categories": [{"name" : "Sports"}],
+        "image" : "",
+        "locale" : {
+            "zip" : "80027",
+            "county": "Boulder",
+            "state": "CO"
+        },
+        "members" : []
+    },
+    {
+        "id": 3,
+        "activity" : "Climbing",
+        "categories": [{"name" : "Sports"}],
+        "image" : "",
+        "locale" : {
+            "zip" : "80027",
+            "county": "Boulder",
+            "state": "CO"
+        },
+        "members" : []
+    },
+    {
+        "id": 4,
+        "activity" : "Paddle Boarding",
+        "categories": [{"name" : "Sports"}],
+        "image" : "",
+        "locale" : {
+            "zip" : "80027",
+            "county": "Boulder",
+            "state": "CO"
+        },
+        "members" : []
+    },
+    {
+        "id": 5,
+        "activity" : "Yoga",
+        "categories": [{"name" : "Fitness"}],
+        "image" : "",
+        "locale" : {
+            "zip" : "80027",
+            "county": "Boulder",
+            "state": "CO"
+        },
+        "members" : []
+    },
+    {
+        "id": 6,
+        "activity" : "Euchre",
+        "categories": [{"name" : "Games"}],
+        "image" : "",
+        "locale" : {
+            "zip" : "80027",
+            "county": "Boulder",
+            "state": "CO"
+        },
+        "members" : []
+    },
+    {
+        "id": 7,
+        "activity" : "Snowboarding",
+        "categories": [{"name" : "Sports"}],
+        "image" : "",
+        "locale" : {
+            "zip" : "80027",
+            "county": "Boulder",
+            "state": "CO"
+        },
+        "members" : []
+    },
+    {
+        "id": 8,
+        "activity" : "Running",
+        "categories": [{"name" : "Sports"}],
+        "image" : "",
+        "locale" : {
+            "zip" : "80027",
+            "county": "Boulder",
+            "state": "CO"
+        },
+        "members" : []
+    },
+    {
+        "id": 9,
+        "activity" : "Mountain Biking",
+        "categories": [{"name" : "Sports"}],
+        "image" : "",
+        "locale" : {
+            "zip" : "80027",
+            "county": "Boulder",
+            "state": "CO"
+        },
+        "members" : []
+    },
+    {
+        "id": 10,
+        "activity" : "Fly Fishing",
+        "categories": [{"name" : "Sports"}],
+        "image" : "",
+        "locale" : {
+            "zip" : "80027",
+            "county": "Boulder",
+            "state": "CO"
+        },
+        "members" : []
+    }
+]

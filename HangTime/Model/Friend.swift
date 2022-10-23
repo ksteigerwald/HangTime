@@ -40,3 +40,5 @@ struct Friend: Codable, Identifiable {
     let updatedAt: String
     let photos: [Photo]
 }
+
+
