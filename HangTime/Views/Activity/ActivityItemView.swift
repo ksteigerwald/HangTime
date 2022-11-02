@@ -19,7 +19,7 @@ struct ActivityItemView: View {
                 .padding(.bottom, 5)
                 .padding(.leading, 15)
         }
-        .frame(width: .infinity, height: 125)
+        .frame(height: 125)
         .background(.pink)
         .cornerRadius(15)
     }

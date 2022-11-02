@@ -10,6 +10,7 @@ import SwiftUI
 //let friends: [Friend] = Bundle.main.decode([Friend].self, from: "friends.json")!
 let friends: [Friend] = Bundle.main.decode([Friend].self, from: "friends.json")!
 let activities: [Activity] = Bundle.main.decode([Activity].self, from: "activities.json")!
+
 // LAYOUT
 let columnSpacing: CGFloat = 10
 let rowSpacing: CGFloat = 10

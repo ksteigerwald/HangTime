@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80164C62291293B600758E87 /* CliqueDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80164C61291293B600758E87 /* CliqueDetailView.swift */; };
 		8025BF162903D23400F11127 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8025BF152903D23400F11127 /* DiscoverView.swift */; };
 		8025BF182903D61F00F11127 /* DiscoverDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8025BF172903D61F00F11127 /* DiscoverDetailView.swift */; };
 		8025BF1B2903DC3D00F11127 /* MatchMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8025BF1A2903DC3D00F11127 /* MatchMaker.swift */; };
@@ -56,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		80164C61291293B600758E87 /* CliqueDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CliqueDetailView.swift; sourceTree = "<group>"; };
 		8025BF152903D23400F11127 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		8025BF172903D61F00F11127 /* DiscoverDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverDetailView.swift; sourceTree = "<group>"; };
 		8025BF1A2903DC3D00F11127 /* MatchMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchMaker.swift; sourceTree = "<group>"; };
@@ -116,6 +118,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80164C602912939E00758E87 /* Clique */ = {
+			isa = PBXGroup;
+			children = (
+				80164C61291293B600758E87 /* CliqueDetailView.swift */,
+			);
+			path = Clique;
+			sourceTree = "<group>";
+		};
 		8025BF142903D21700F11127 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +275,7 @@
 		80BB83A22902DAE800EE8E3A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				80164C602912939E00758E87 /* Clique */,
 				8025BF382904E87400F11127 /* Activity */,
 				8025BF142903D21700F11127 /* Discover */,
 				803F83012902EAF9001097FE /* Home */,
@@ -418,6 +429,7 @@
 			files = (
 				8025BF182903D61F00F11127 /* DiscoverDetailView.swift in Sources */,
 				80BB83782902D9C900EE8E3A /* Persistence.swift in Sources */,
+				80164C62291293B600758E87 /* CliqueDetailView.swift in Sources */,
 				8025BF2D2903FFA100F11127 /* CustomShape.swift in Sources */,
 				803F83072903BFD1001097FE /* CardView.swift in Sources */,
 				8025BF2B2903E47900F11127 /* Constant.swift in Sources */,
